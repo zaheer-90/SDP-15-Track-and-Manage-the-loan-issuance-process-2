@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LoanFlow Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #1e3a8a;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    .main {
+      flex: 1;
+      padding: 30px;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+    .top-bar span {
+      margin-right: 20px;
+      font-weight: bold;
+    }
+    .card {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .loan-details p {
+      margin: 8px 0;
+    }
+    .btn {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .status {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>LoanFlow</h2>
+    <a href="#">My Loans</a>
+    <a href="#">Payments</a>
+    <a href="#">Schedule</a>
+    <a href="#">Apply for Loan</a>
+  </div>
+
+  <div class="main">
+    <div class="top-bar">
+      <span>User</span>
+      <a href="#">Settings</a> | <a href="#">Logout</a>
+    </div>
+
+    <div class="card">
+      <h3>Welcome back!</h3>
+      <p>Your next payment of ₹7,420.00 is due on <strong>2024-01-15</strong></p>
+      <button class="btn">Make Payment</button>
+    </div>
+
+    <div class="card loan-details">
+      <h3>Active Loan</h3>
+      <p>Status: <strong>Active</strong></p>
+      <p>Original Amount: ₹25,000.00</p>
+      <p>Remaining Balance: ₹13,750.00</p>
+      <p>Monthly Payment: ₹7,420.00</p>
+      <p>Interest Rate: 8.5%</p>
+      <p>Loan Progress: 11 of 36 payments</p>
+      <button class="btn">Make Payment</button>
+      <button class="btn">View Details</button>
+    </div>
+
+    <div class="card">
+      <h3>Need Additional Funding?</h3>
+      <p>Based on your payment history, you may be eligible for additional loans with competitive rates.</p>
+      <p class="status">✔ Excellent Payment History</p>
+      <button class="btn">Apply for New Loan</button>
+    </div>
+  </div>
+</body>
+</html>
